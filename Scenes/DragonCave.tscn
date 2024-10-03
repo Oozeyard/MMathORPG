@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://de8cbar14ra3u"]
 
 [ext_resource type="Script" path="res://Scripts/DialogueLaunch.gd" id="1_pteje"]
-[ext_resource type="SpriteFrames" uid="uid://d3nwvwxnd5gde" path="res://Assets/Sprite/Dragon/dragon_animation.tres" id="2_5jyor"]
+[ext_resource type="SpriteFrames" path="res://Assets/Sprite/Dragon/dragon_animation.tres" id="2_5jyor"]
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="4_4h04y"]
-[ext_resource type="SpriteFrames" uid="uid://5mh83g3hbup3" path="res://Assets/Sprite/Gonzalez/gonzalez_animation.tres" id="4_g30ay"]
+[ext_resource type="SpriteFrames" path="res://Assets/Sprite/Gonzalez/gonzalez_animation.tres" id="4_g30ay"]
 [ext_resource type="Texture2D" uid="uid://hw4r5cnal3qh" path="res://Assets/Background.png" id="4_w1gwg"]
-[ext_resource type="SpriteFrames" uid="uid://dducongkj3cdo" path="res://Assets/Sprite/Anubis/anubis_animation.tres" id="5_qnlxh"]
+[ext_resource type="SpriteFrames" path="res://Assets/Sprite/Anubis/anubis_animation.tres" id="5_qnlxh"]
 [ext_resource type="Script" path="res://Scripts/Enemy.gd" id="6_5n1pq"]
-[ext_resource type="PackedScene" uid="uid://dmi20k8fjanyx" path="res://Scenes/UI_Player.tscn" id="6_nbx4l"]
+[ext_resource type="PackedScene" path="res://Scenes/UI_Player.tscn" id="6_nbx4l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_niu7e"]
 bg_color = Color(0.913265, 0.142919, 0.136703, 1)
