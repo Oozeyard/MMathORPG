@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://de8cbar14ra3u"]
+[gd_scene load_steps=6 format=3 uid="uid://de8cbar14ra3u"]
 
+[ext_resource type="Script" path="res://Scripts/DialogueLaunch.gd" id="1_pteje"]
 [ext_resource type="SpriteFrames" uid="uid://d3nwvwxnd5gde" path="res://Assets/Sprite/Dragon/dragon_idle.tres" id="2_5jyor"]
 [ext_resource type="SpriteFrames" uid="uid://reys31b6hoha" path="res://Assets/Sprite/Gonzalez/idle/gonzalez_idle.tres" id="2_s7i64"]
 [ext_resource type="SpriteFrames" uid="uid://duniaa1tv2bi6" path="res://Assets/Sprite/Anubis/idle/anubis_idle.tres" id="3_bm2fv"]
 [ext_resource type="Texture2D" uid="uid://hw4r5cnal3qh" path="res://Assets/Background.png" id="4_w1gwg"]
 
 [node name="DragonCave" type="Node2D"]
+script = ExtResource("1_pteje")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(638, 364.5)
