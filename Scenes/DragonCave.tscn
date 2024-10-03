@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://de8cbar14ra3u"]
+[gd_scene load_steps=7 format=3 uid="uid://de8cbar14ra3u"]
 
+[ext_resource type="Script" path="res://Scenes/DragonCave.gd" id="1_7hrvk"]
 [ext_resource type="SpriteFrames" uid="uid://d3nwvwxnd5gde" path="res://Assets/Sprite/Dragon/dragon_idle.tres" id="2_5jyor"]
 [ext_resource type="SpriteFrames" uid="uid://reys31b6hoha" path="res://Assets/Sprite/Gonzalez/idle/gonzalez_idle.tres" id="2_s7i64"]
 [ext_resource type="SpriteFrames" uid="uid://duniaa1tv2bi6" path="res://Assets/Sprite/Anubis/idle/anubis_idle.tres" id="3_bm2fv"]
 [ext_resource type="Texture2D" uid="uid://hw4r5cnal3qh" path="res://Assets/Background.png" id="4_w1gwg"]
+[ext_resource type="PackedScene" uid="uid://dmi20k8fjanyx" path="res://Scenes/UI_Player.tscn" id="6_nbx4l"]
 
 [node name="DragonCave" type="Node2D"]
+script = ExtResource("1_7hrvk")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(638, 364.5)
@@ -29,3 +32,5 @@ position = Vector2(1029, 471)
 scale = Vector2(0.362, 0.369167)
 sprite_frames = ExtResource("3_bm2fv")
 frame_progress = 0.504223
+
+[node name="UI_Player" parent="." instance=ExtResource("6_nbx4l")]

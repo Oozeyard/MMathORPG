@@ -1,0 +1,99 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmi20k8fjanyx"]
+
+[ext_resource type="Script" path="res://Scenes/CanvasLayer.gd" id="1_hgf54"]
+[ext_resource type="Texture2D" uid="uid://qdqfbv8vnu8d" path="res://Assets/Sprite/Gonzalez/idle/gonzalez-0.png" id="2_1f7g0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7uhxm"]
+bg_color = Color(1, 0.972549, 0.435294, 0.364706)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xv2n"]
+bg_color = Color(0, 0, 0, 0.701961)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.0196078, 0.0196078, 0.0196078, 0.901961)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_235do"]
+texture = ExtResource("2_1f7g0")
+
+[node name="Ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_hgf54")
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_right = 1282.0
+offset_bottom = 232.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7uhxm")
+
+[node name="XPBar" type="ProgressBar" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 21.0
+offset_right = 1246.0
+offset_bottom = 48.0
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 34.0
+offset_right = 199.0
+offset_bottom = 161.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8xv2n")
+
+[node name="TextureRect" type="Panel" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 43.0
+offset_right = 271.0
+offset_bottom = 243.0
+scale = Vector2(0.6, 0.6)
+theme_override_styles/panel = SubResource("StyleBoxTexture_235do")
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 162.0
+offset_right = 173.0
+offset_bottom = 185.0
+text = "Gonzalez"
+
+[node name="QuestionPanel" type="Panel" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 76.0
+offset_right = 1243.0
+offset_bottom = 233.0
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 23.0
+offset_right = 290.0
+offset_bottom = 46.0
+text = "Level 1"
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 350.0
+offset_right = 403.0
+offset_bottom = 377.0
