@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://de8cbar14ra3u"]
+
+[ext_resource type="SpriteFrames" uid="uid://d3nwvwxnd5gde" path="res://Assets/Sprite/Dragon/dragon_idle.tres" id="2_5jyor"]
+[ext_resource type="SpriteFrames" uid="uid://reys31b6hoha" path="res://Assets/Sprite/Gonzalez/idle/gonzalez_idle.tres" id="2_s7i64"]
+[ext_resource type="SpriteFrames" uid="uid://duniaa1tv2bi6" path="res://Assets/Sprite/Anubis/idle/anubis_idle.tres" id="3_bm2fv"]
+[ext_resource type="Texture2D" uid="uid://hw4r5cnal3qh" path="res://Assets/Background.png" id="4_w1gwg"]
+
+[node name="DragonCave" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(638, 364.5)
+scale = Vector2(1.81766, 2.52431)
+texture = ExtResource("4_w1gwg")
+
+[node name="Dragon" type="AnimatedSprite2D" parent="."]
+position = Vector2(1133, 344)
+scale = Vector2(0.596001, 0.66026)
+sprite_frames = ExtResource("2_5jyor")
+frame_progress = 0.852249
+
+[node name="Gonzalez" type="AnimatedSprite2D" parent="."]
+position = Vector2(308, 474)
+scale = Vector2(0.362, 0.369167)
+sprite_frames = ExtResource("2_s7i64")
+frame_progress = 0.683677
+
+[node name="Anubis" type="AnimatedSprite2D" parent="."]
+position = Vector2(1029, 471)
+scale = Vector2(0.362, 0.369167)
+sprite_frames = ExtResource("3_bm2fv")
+frame_progress = 0.504223

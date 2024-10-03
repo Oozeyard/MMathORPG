@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://d3nwvwxnd5gde"]
+
+[ext_resource type="Texture2D" uid="uid://cn3nlk37vbt3" path="res://Assets/Sprite/Dragon/Dragon-1.png" id="1_nnh3n"]
+[ext_resource type="Texture2D" uid="uid://bguyk3b77igvi" path="res://Assets/Sprite/Dragon/Dragon-2.png" id="2_6jxpw"]
+[ext_resource type="Texture2D" uid="uid://ddbew4rbe3jbx" path="res://Assets/Sprite/Dragon/Dragon-3.png" id="3_416x5"]
+[ext_resource type="Texture2D" uid="uid://bb7kdsukf2ic0" path="res://Assets/Sprite/Dragon/Dragon-4.png" id="4_3isoc"]
+[ext_resource type="Texture2D" uid="uid://beoqgb4oq186y" path="res://Assets/Sprite/Dragon/Dragon-5.png" id="5_ba6r6"]
+[ext_resource type="Texture2D" uid="uid://b11uvxsjv4cr5" path="res://Assets/Sprite/Dragon/Dragon-6.png" id="6_yafx0"]
+[ext_resource type="Texture2D" uid="uid://cphshmkuvqi3f" path="res://Assets/Sprite/Dragon/Dragon-7.png" id="7_gjea0"]
+[ext_resource type="Texture2D" uid="uid://cjpasrn3f08bc" path="res://Assets/Sprite/Dragon/Dragon-8.png" id="8_jlo3m"]
+[ext_resource type="Texture2D" uid="uid://c3tlbv68j2lq8" path="res://Assets/Sprite/Dragon/Dragon-9.png" id="9_o6hc3"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nnh3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6jxpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_416x5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3isoc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ba6r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yafx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gjea0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jlo3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_o6hc3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
