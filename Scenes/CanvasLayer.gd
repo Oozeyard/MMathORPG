@@ -11,15 +11,6 @@ var player_xp = 0
 var xp_to_next_level = 100
 var player_level = 1
 
-func _process(delta):
-	# Mettre à jour la barre de vie
-	health_bar.value = player_health
-	health_bar.max_value = player_max_health
-	
-	# Mettre à jour la barre d'XP
-	xp_bar.value = player_xp
-	xp_bar.max_value = xp_to_next_level
-
 # Fonction pour ajouter de l'XP au joueur
 func add_xp(amount):
 	player_xp += amount

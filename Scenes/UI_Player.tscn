@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmi20k8fjanyx"]
+[gd_scene load_steps=5 format=3 uid="uid://dmi20k8fjanyx"]
 
-[ext_resource type="Script" path="res://Scenes/CanvasLayer.gd" id="1_hgf54"]
 [ext_resource type="Texture2D" uid="uid://qdqfbv8vnu8d" path="res://Assets/Sprite/Gonzalez/idle/gonzalez-0.png" id="2_1f7g0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7uhxm"]
@@ -37,7 +36,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource("1_hgf54")
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
 offset_right = 1282.0
@@ -90,10 +88,3 @@ offset_top = 23.0
 offset_right = 290.0
 offset_bottom = 46.0
 text = "Level 1"
-
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Panel"]
-layout_mode = 0
-offset_left = 202.0
-offset_top = 350.0
-offset_right = 403.0
-offset_bottom = 377.0
