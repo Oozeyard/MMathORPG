@@ -1,0 +1,87 @@
+[gd_resource type="SpriteFrames" load_steps=19 format=3 uid="uid://dducongkj3cdo"]
+
+[ext_resource type="Texture2D" uid="uid://bewd0fcdbhoso" path="res://Assets/Sprite/Anubis/attack/anubis-attack-0.png" id="1_b2eu4"]
+[ext_resource type="Texture2D" uid="uid://dhkux2wurepow" path="res://Assets/Sprite/Anubis/attack/anubis-attack-1.png" id="2_3k1if"]
+[ext_resource type="Texture2D" uid="uid://iqo6cigywxr5" path="res://Assets/Sprite/Anubis/attack/anubis-attack-2.png" id="3_x04y6"]
+[ext_resource type="Texture2D" uid="uid://dolku8y77ygj8" path="res://Assets/Sprite/Anubis/attack/anubis-attack-3.png" id="4_mo1jo"]
+[ext_resource type="Texture2D" uid="uid://die255ttpwc07" path="res://Assets/Sprite/Anubis/attack/anubis-attack-4.png" id="5_0ui1v"]
+[ext_resource type="Texture2D" uid="uid://dotsbefy00y1g" path="res://Assets/Sprite/Anubis/attack/anubis-attack-5.png" id="6_n6r74"]
+[ext_resource type="Texture2D" uid="uid://il7sudka2hd6" path="res://Assets/Sprite/Anubis/attack/anubis-attack-6.png" id="7_5b7ll"]
+[ext_resource type="Texture2D" uid="uid://jd8b1dhxkwcr" path="res://Assets/Sprite/Anubis/attack/anubis-attack-7.png" id="8_hojnw"]
+[ext_resource type="Texture2D" uid="uid://cyjmcw8mouuqv" path="res://Assets/Sprite/Anubis/attack/anubis-attack-8.png" id="9_dt76j"]
+[ext_resource type="Texture2D" uid="uid://srqtlqus8w15" path="res://Assets/Sprite/Anubis/attack/anubis-attack-9.png" id="10_r5ect"]
+[ext_resource type="Texture2D" uid="uid://d4lcsjbco6jmq" path="res://Assets/Sprite/Anubis/idle/Anubis-0.png" id="11_ngye0"]
+[ext_resource type="Texture2D" uid="uid://c6elx7wsom3hq" path="res://Assets/Sprite/Anubis/idle/Anubis-1.png" id="12_ychy5"]
+[ext_resource type="Texture2D" uid="uid://cvfd62obbj8kf" path="res://Assets/Sprite/Anubis/idle/Anubis-2.png" id="13_pofyn"]
+[ext_resource type="Texture2D" uid="uid://dimt5ga6ctdwe" path="res://Assets/Sprite/Anubis/idle/Anubis-3.png" id="14_w5ywy"]
+[ext_resource type="Texture2D" uid="uid://vj08cjpblbie" path="res://Assets/Sprite/Anubis/idle/Anubis-4.png" id="15_81ym5"]
+[ext_resource type="Texture2D" uid="uid://buc3t8brynwj3" path="res://Assets/Sprite/Anubis/idle/Anubis-5.png" id="16_f1yha"]
+[ext_resource type="Texture2D" uid="uid://csbk0l0dbygxl" path="res://Assets/Sprite/Anubis/idle/Anubis-6.png" id="17_rli8j"]
+[ext_resource type="Texture2D" uid="uid://d4xk7rj4rsb3" path="res://Assets/Sprite/Anubis/idle/Anubis-7.png" id="18_syyo2"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_b2eu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3k1if")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_x04y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mo1jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0ui1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_n6r74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5b7ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hojnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dt76j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_r5ect")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ngye0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ychy5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pofyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_w5ywy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_81ym5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_f1yha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_rli8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_syyo2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]

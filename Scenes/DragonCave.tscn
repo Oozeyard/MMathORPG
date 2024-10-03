@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://de8cbar14ra3u"]
 
 [ext_resource type="Script" path="res://Scenes/DragonCave.gd" id="1_7hrvk"]
-[ext_resource type="SpriteFrames" uid="uid://d3nwvwxnd5gde" path="res://Assets/Sprite/Dragon/dragon_idle.tres" id="2_5jyor"]
-[ext_resource type="SpriteFrames" uid="uid://reys31b6hoha" path="res://Assets/Sprite/Gonzalez/idle/gonzalez_idle.tres" id="2_s7i64"]
-[ext_resource type="SpriteFrames" uid="uid://duniaa1tv2bi6" path="res://Assets/Sprite/Anubis/idle/anubis_idle.tres" id="3_bm2fv"]
+[ext_resource type="SpriteFrames" uid="uid://d3nwvwxnd5gde" path="res://Assets/Sprite/Dragon/dragon_animation.tres" id="2_5jyor"]
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="4_4h04y"]
+[ext_resource type="SpriteFrames" uid="uid://5mh83g3hbup3" path="res://Assets/Sprite/Gonzalez/gonzalez_animation.tres" id="4_g30ay"]
 [ext_resource type="Texture2D" uid="uid://hw4r5cnal3qh" path="res://Assets/Background.png" id="4_w1gwg"]
+[ext_resource type="SpriteFrames" uid="uid://dducongkj3cdo" path="res://Assets/Sprite/Anubis/anubis_animation.tres" id="5_qnlxh"]
 [ext_resource type="Script" path="res://Scripts/Enemy.gd" id="6_5n1pq"]
 [ext_resource type="PackedScene" uid="uid://dmi20k8fjanyx" path="res://Scenes/UI_Player.tscn" id="6_nbx4l"]
 
@@ -29,17 +29,11 @@ position = Vector2(638, 364.5)
 scale = Vector2(1.81766, 2.52431)
 texture = ExtResource("4_w1gwg")
 
-[node name="Dragon" type="AnimatedSprite2D" parent="."]
-top_level = true
-position = Vector2(1112, 315)
-scale = Vector2(0.596001, 0.66026)
-sprite_frames = ExtResource("2_5jyor")
-frame_progress = 0.852249
-
 [node name="Gonzalez" type="AnimatedSprite2D" parent="."]
 position = Vector2(308, 474)
 scale = Vector2(0.362, 0.369167)
-sprite_frames = ExtResource("2_s7i64")
+sprite_frames = ExtResource("4_g30ay")
+animation = &"attack"
 script = ExtResource("4_4h04y")
 
 [node name="Health" type="ProgressBar" parent="Gonzalez"]
@@ -53,8 +47,8 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_niu7e")
 [node name="Enemy" type="AnimatedSprite2D" parent="."]
 position = Vector2(1029, 471)
 scale = Vector2(0.362, 0.369167)
-sprite_frames = ExtResource("3_bm2fv")
-frame_progress = 0.504223
+sprite_frames = ExtResource("5_qnlxh")
+animation = &"idle"
 script = ExtResource("6_5n1pq")
 
 [node name="Health" type="ProgressBar" parent="Enemy"]
@@ -64,5 +58,12 @@ offset_right = 273.818
 offset_bottom = -233.386
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_styles/fill = SubResource("StyleBoxFlat_niu7e")
+
+[node name="Dragon" type="AnimatedSprite2D" parent="Enemy"]
+top_level = true
+position = Vector2(1112, 315)
+scale = Vector2(0.596001, 0.66026)
+sprite_frames = ExtResource("2_5jyor")
+animation = &"idle"
 
 [node name="UI_Player" parent="." instance=ExtResource("6_nbx4l")]

@@ -12,7 +12,7 @@ var xpCap: int = 0
 func _ready():
 	$Health.max_value = maxHealth
 	$Health.value = currentHealth
-	play("default")
+	play("idle")
 
 func take_damage(damage: int) -> void:
 	currentHealth -= damage
