@@ -1,29 +1,15 @@
 ~ Bienvenue
-Anubis: [[Bienvenue|Salut|Coucou]] .
-Anubis: Voici le jeu MMathORPG. Es-tu prêt ?
-- Oui
-	Anubis: Super, question 1 :.
-- Non
-	Anubis: Bah dégage. => END
-
-
+Anubis: Les questions vont maintenant être plus faciles.
 ~ q1
-while nbErreur < 2 
-	Anubis: Combien font 5+5 ?
-	- 10
-		Anubis: Correct.
-	- 6
-		Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-	- 12
-		Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-	- 9
-		Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-Anubis: Je vois que tu fais beaucoup d'erreurs, veux-tu baisser la difficulté ?
-- Oui
-	Anubis: Très bien. => END
-- Non
-	Anubis: Compris. => END
-
+Anubis: Combien font 5+5 ?
+- 10
+	Anubis: Correct.
+- 6
+	Anubis: Faux. Recommence.[do count_nb_Error()] => q1
+- 12
+	Anubis: Faux. Recommence.[do count_nb_Error()] => q1
+- 9
+	Anubis: Faux. Recommence.[do count_nb_Error()] => q1
 
 ~ q2
 Anubis: Combien font 3x4 ?

@@ -7,32 +7,44 @@ Anubis: Voici le jeu MMathORPG. Es-tu prêt ?
 	Anubis: Bah dégage. => END
 	
 ~ q1
-while nbErreur < 2 
-	Anubis: Combien font 5+5 ?
-	- 10
-		Anubis: Correct.
-	- 6
-		Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-	- 12
-		Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-	- 9
-		Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-Anubis: Je vois que tu fais beaucoup d'erreurs, veux-tu baisser la difficulté ?
-- Oui
-	Anubis: Très bien. => END
-- Non
-	Anubis: Compris. => END
+
+Anubis: Combien font 5+5 ?
+- 10
+	do correct(70)
+	Anubis: Correct. 
+- 6
+	do incorrect(30)
+	Anubis: Faux.
+- 12
+	do incorrect(30)
+	Anubis: Faux.
+- 9
+	do incorrect(30)
+	Anubis: Faux.
 
 
 ~ q2
 Anubis: Combien font 3x4 ?
 - 12
+	do correct(30)
 	Anubis: Correct.
 - 6
-	Anubis: Faux. Recommence. => q2
+	do incorrect(30)
+	Anubis: Faux.
 - 15
-	Anubis: Faux. Recommence. => q2
+	do incorrect(30)
+	Anubis: Faux.
 - 34
-	Anubis: Faux. Recommence. => q2
+	do incorrect(30)
+	Anubis: Faux.
+	
+	
+~ suite
+if nbErreur >= 2 :
+	Anubis : Tu as échoué aux deux questions, veux-tu rendre le tout plus facile ?
+    - Oui
+		do loadEasy()
+    - Non
+		Anubis: Ok. => END
 
 => END

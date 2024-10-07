@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmi20k8fjanyx"]
+[gd_scene load_steps=5 format=3 uid="uid://uf5idcyayoc2"]
 
 [ext_resource type="Texture2D" uid="uid://qdqfbv8vnu8d" path="res://Assets/Sprite/Gonzalez/idle/gonzalez-0.png" id="2_1f7g0"]
 
@@ -81,7 +81,7 @@ offset_top = 76.0
 offset_right = 1243.0
 offset_bottom = 233.0
 
-[node name="Label2" type="Label" parent="CanvasLayer/Panel"]
+[node name="Level" type="Label" parent="CanvasLayer/Panel"]
 layout_mode = 0
 offset_left = 236.0
 offset_top = 23.0

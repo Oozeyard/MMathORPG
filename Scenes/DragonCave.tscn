@@ -3,11 +3,11 @@
 [ext_resource type="Script" path="res://Scripts/DialogueLaunch.gd" id="1_pteje"]
 [ext_resource type="SpriteFrames" path="res://Assets/Sprite/Dragon/dragon_animation.tres" id="2_5jyor"]
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="4_4h04y"]
-[ext_resource type="SpriteFrames" path="res://Assets/Sprite/Gonzalez/gonzalez_animation.tres" id="4_g30ay"]
+[ext_resource type="SpriteFrames" uid="uid://c50n67utqxght" path="res://Assets/Sprite/Gonzalez/gonzalez_animation.tres" id="4_g30ay"]
 [ext_resource type="Texture2D" uid="uid://hw4r5cnal3qh" path="res://Assets/Background.png" id="4_w1gwg"]
-[ext_resource type="SpriteFrames" path="res://Assets/Sprite/Anubis/anubis_animation.tres" id="5_qnlxh"]
+[ext_resource type="SpriteFrames" uid="uid://b0obu34i67eoe" path="res://Assets/Sprite/Anubis/anubis_animation.tres" id="5_qnlxh"]
 [ext_resource type="Script" path="res://Scripts/Enemy.gd" id="6_5n1pq"]
-[ext_resource type="PackedScene" path="res://Scenes/UI_Player.tscn" id="6_nbx4l"]
+[ext_resource type="PackedScene" uid="uid://uf5idcyayoc2" path="res://Scenes/UI_Player.tscn" id="6_nbx4l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_niu7e"]
 bg_color = Color(0.913265, 0.142919, 0.136703, 1)
@@ -34,6 +34,8 @@ position = Vector2(308, 474)
 scale = Vector2(0.362, 0.369167)
 sprite_frames = ExtResource("4_g30ay")
 animation = &"attack"
+frame = 5
+frame_progress = 1.0
 script = ExtResource("4_4h04y")
 
 [node name="Health" type="ProgressBar" parent="Gonzalez"]
@@ -48,7 +50,7 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_niu7e")
 position = Vector2(1029, 471)
 scale = Vector2(0.362, 0.369167)
 sprite_frames = ExtResource("5_qnlxh")
-animation = &"idle"
+animation = &"attack"
 script = ExtResource("6_5n1pq")
 
 [node name="Health" type="ProgressBar" parent="Enemy"]

@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://5mh83g3hbup3"]
+[gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://c50n67utqxght"]
 
 [ext_resource type="Texture2D" uid="uid://c6so01y6ja5cj" path="res://Assets/Sprite/Gonzalez/attack/gonzalez-attack-0.png" id="1_fa0ey"]
 [ext_resource type="Texture2D" uid="uid://d0gy5ks0wninx" path="res://Assets/Sprite/Gonzalez/attack/gonzalez-attack-1.png" id="2_bhcum"]
@@ -36,7 +36,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_rvw2x")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
 "speed": 5.0
 }, {

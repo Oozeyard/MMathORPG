@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=19 format=3 uid="uid://dducongkj3cdo"]
+[gd_resource type="SpriteFrames" load_steps=19 format=3 uid="uid://b0obu34i67eoe"]
 
 [ext_resource type="Texture2D" uid="uid://bewd0fcdbhoso" path="res://Assets/Sprite/Anubis/attack/anubis-attack-0.png" id="1_b2eu4"]
 [ext_resource type="Texture2D" uid="uid://dhkux2wurepow" path="res://Assets/Sprite/Anubis/attack/anubis-attack-1.png" id="2_3k1if"]
@@ -52,7 +52,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_r5ect")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
 "speed": 5.0
 }, {

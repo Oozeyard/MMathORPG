@@ -1,0 +1,44 @@
+~ Bienvenue
+Tuteur: Les questions vont maintenant être plus difficiles.
+	
+~ q1
+
+Anubis: Combien font 12x25 ?
+- 1225
+	do incorrect(40)
+	Tuteur: Faux. 
+	Anubis: Prends ça !
+- 300
+	do correct(50)
+	Tuteur: Exact.
+	Anubis: Bien joué, humain !
+- 250
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Prends ça !
+- 325
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Prends ça !
+
+
+~ q2
+Tuteur: Combien font 140/7 ?
+- 12
+	do correct(40)
+	Tuteur: Correct.
+	Anubis: Je t'ai eu !
+- 18
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Je t'ai eu !
+- 20
+	do correct(50)
+	Tuteur: Exact.
+	Anubis: ARRGGHH
+- 23
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Je t'ai eu !
+
+=> END

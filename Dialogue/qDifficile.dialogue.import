@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://n7g5lkhbfiwe"
+path="res://.godot/imported/qDifficile.dialogue-a0881ddcec4b0705c95e536337beb89a.tres"
+
+[deps]
+
+source_file="res://Dialogue/qDifficile.dialogue"
+dest_files=["res://.godot/imported/qDifficile.dialogue-a0881ddcec4b0705c95e536337beb89a.tres"]
+
+[params]
+
+defaults=true
