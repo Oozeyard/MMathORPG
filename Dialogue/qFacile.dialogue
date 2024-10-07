@@ -1,25 +1,33 @@
 ~ Bienvenue
-Anubis: Les questions vont maintenant être plus faciles.
+Tuteur: Les questions vont maintenant être plus faciles.
 ~ q1
-Anubis: Combien font 5+5 ?
-- 10
-	Anubis: Correct.
-- 6
-	Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-- 12
-	Anubis: Faux. Recommence.[do count_nb_Error()] => q1
-- 9
-	Anubis: Faux. Recommence.[do count_nb_Error()] => q1
+Tuteur: Combien font 1+1 ?
+- 2
+	Tuteur: Correct.
+	Anubis: OOF !
+- 1
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+- 11
+	Tuteur: Incorrect. 
+	Anubis: Prends ça !
+- 0
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
 
 ~ q2
-Anubis: Combien font 3x4 ?
+Tuteur: Combien font 2x2 ?
+- 4
+	Tuteur: Correct.
+	Anubis: AAAAHHH!
+- 22
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+- 2
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
 - 12
-	Anubis: Correct.
-- 6
-	Anubis: Faux. Recommence. => q2
-- 15
-	Anubis: Faux. Recommence. => q2
-- 34
-	Anubis: Faux. Recommence. => q2
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
 
 => END

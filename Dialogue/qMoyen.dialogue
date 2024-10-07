@@ -1,50 +1,79 @@
 ~ Bienvenue
-Anubis: [[Bienvenue|Salut|Coucou]] .
-Anubis: Voici le jeu MMathORPG. Es-tu prêt ?
+Tuteur: [[Bienvenue|Salut|Coucou]] .
+Tuteur: Voici le jeu MMathORPG. Es-tu prêt ?
 - Oui
-	Anubis: Super, question 1 :.
+	Tuteur: Super, alors affronte Anubis.
+	Anubis: Prépare toi, humain !
 - Non
-	Anubis: Bah dégage. => END
+	Tuteur: Bah dégage. => END
 	
 ~ q1
 
-Anubis: Combien font 5+5 ?
+Tuteur: Combien font 5+5 ?
 - 10
 	do correct(70)
-	Anubis: Correct. 
+	Tuteur: Correct. 
+	Anubis: Ouch !
 - 6
 	do incorrect(30)
-	Anubis: Faux.
+	Tuteur: Faux.
+	Anubis: Prends ça !
 - 12
 	do incorrect(30)
-	Anubis: Faux.
+	Tuteur: Faux.
+	Anubis: Prends ça !
 - 9
 	do incorrect(30)
-	Anubis: Faux.
+	Tuteur: Faux.
+	Anubis: Prends ça !
 
 
 ~ q2
-Anubis: Combien font 3x4 ?
+Tuteur: Combien font 3x4 ?
 - 12
 	do correct(30)
-	Anubis: Correct.
+	Tuteur: Correct.
+	Anubis: Comment oses - tu ?
 - 6
 	do incorrect(30)
-	Anubis: Faux.
+	Tuteur: Faux.
+	Anubis: Prends ça !
 - 15
 	do incorrect(30)
-	Anubis: Faux.
+	Tuteur: Faux.
+	Anubis: Prends ça !
 - 34
 	do incorrect(30)
-	Anubis: Faux.
+	Tuteur: Faux.
+	Anubis: Prends ça !
 	
 	
 ~ suite
 if nbErreur >= 2 :
-	Anubis : Tu as échoué aux deux questions, veux-tu rendre le tout plus facile ?
+	Tuteur : Tu as échoué aux deux questions, veux-tu rendre le tout plus facile ?
     - Oui
 		do loadEasy()
+		Anubis: Tu n'es pas un adversaire à ma taille !
     - Non
-		Anubis: Ok. => END
+		Tuteur: Très bien. => q3
+
+~ q3
+Tuteur: Combien font 10/5 ?
+- 3
+	do incorrect(30)
+	Tuteur: Correct.
+	Anubis: Prends ça 
+- 5
+	do incorrect(30)
+	Tuteur: Faux.
+	Anubis: Prends ça !
+- 2
+	do correct(30)
+	Tuteur: Correct.
+	Anubis: Aïe !
+- 1
+	do incorrect(30)
+	Tuteur: Faux.
+	Anubis: Prends ça !
 
 => END
