@@ -1,79 +1,110 @@
 ~ Bienvenue
-Tuteur: [[Bienvenue|Salut|Coucou]] .
+Tuteur: [[Bienvenue|Salutations|Coucou]] .
 Tuteur: Voici le jeu MMathORPG. Es-tu prêt ?
 - Oui
 	Tuteur: Super, alors affronte Anubis.
 	Anubis: Prépare toi, humain !
 - Non
 	Tuteur: Bah dégage. => END
-	
+
 ~ q1
 
 Tuteur: Combien font 5+5 ?
 - 10
-	do correct(70)
 	Tuteur: Correct. 
 	Anubis: Ouch !
+	do correct(40)
 - 6
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(25)
 - 12
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(25)
 - 9
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(25)
 
 
 ~ q2
 Tuteur: Combien font 3x4 ?
 - 12
-	do correct(30)
 	Tuteur: Correct.
 	Anubis: Comment oses - tu ?
+	do correct(40)
 - 6
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(25)
 - 15
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(25)
 - 34
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
-	
+	do incorrect(25)
 	
 ~ suite
 if nbErreur >= 2 :
 	Tuteur : Tu as échoué aux deux questions, veux-tu rendre le tout plus facile ?
     - Oui
-		do loadEasy()
 		Anubis: Tu n'es pas un adversaire à ma taille !
+		do loadEasy()
     - Non
 		Tuteur: Très bien. => q3
+else :
+	=> q3
 
 ~ q3
 Tuteur: Combien font 10/5 ?
 - 3
-	do incorrect(30)
-	Tuteur: Correct.
-	Anubis: Prends ça 
-- 5
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(25)
+- 5
+	Tuteur: Faux.
+	Anubis: Prends ça !
+	do incorrect(25)
 - 2
-	do correct(30)
 	Tuteur: Correct.
 	Anubis: Aïe !
+	do correct(40)
 - 1
-	do incorrect(30)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(25)
+
+~ suite2
+if nbErreur >= 2 :
+	Tuteur : Tu as échoué aux deux questions, veux-tu rendre le tout plus facile ?
+    - Oui
+		Anubis: Tu n'es pas un adversaire à ma taille !
+		do loadEasy()
+    - Non
+		Tuteur: Très bien. => q4
+else :
+	=> q4
+
+~ q4
+Tuteur: Combien font 10x5 ?
+- 25
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(25)
+- 15
+	Tuteur: Faux.
+	Anubis: Prends ça !
+	do incorrect(25)
+- 50
+	Tuteur: Correct.
+	Anubis: Aïe !
+	do correct(40)
+- 105
+	Tuteur: Faux.
+	Anubis: Prends ça !
+	do incorrect(25)
 
 => END

@@ -1,0 +1,40 @@
+~ Bienvenue
+Tuteur: Nous sommes maintenant en mode révision :
+Tuteur: Les réponses aux questions n'influeront pas sur les attaques. => q1
+~ q1
+Tuteur: Combien font 2+1 ?
+- 3
+	Tuteur: Correct. 
+- 2
+	Tuteur: Faux. La bonne réponse était 3.
+- 12
+	Tuteur: Faux. La bonne réponse était 3.
+- 21
+	Tuteur: Faux. La bonne réponse était 3.
+
+~ q2
+
+Tuteur: Combien font 9+5 ?
+- 14
+	Tuteur: Correct. 
+- 15
+	Tuteur: Faux. La bonne réponse était 14.
+- 13
+	Tuteur: Faux. La bonne réponse était 14.
+- 95
+	Tuteur: Faux. La bonne réponse était 14.
+
+~ q3
+Tuteur: Combien font 4/2 ?
+- 3
+	Tuteur: Faux. La bonne réponse était 2.
+- 2
+	Tuteur: Correct. 
+- 1
+	Tuteur: Faux. La bonne réponse était 2.
+- 4
+	Tuteur: Faux. La bonne réponse était 2.
+	
+~ fin
+Tuteur: Les révisions sont terminées, reprenons où nous nous étions arrêtés.
+

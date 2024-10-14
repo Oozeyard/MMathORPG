@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://dv3wpt50c4j1"
+path="res://.godot/imported/victoire.dialogue-7988cbae107b56d5c4ffb00618f14b6b.tres"
+
+[deps]
+
+source_file="res://Dialogue/victoire.dialogue"
+dest_files=["res://.godot/imported/victoire.dialogue-7988cbae107b56d5c4ffb00618f14b6b.tres"]
+
+[params]
+
+defaults=true

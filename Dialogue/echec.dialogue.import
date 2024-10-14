@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://d34sofhd5w2ch"
+path="res://.godot/imported/echec.dialogue-1848117f65c1501f965600234cee3c9e.tres"
+
+[deps]
+
+source_file="res://Dialogue/echec.dialogue"
+dest_files=["res://.godot/imported/echec.dialogue-1848117f65c1501f965600234cee3c9e.tres"]
+
+[params]
+
+defaults=true

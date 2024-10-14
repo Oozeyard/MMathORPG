@@ -1,12 +1,12 @@
 ~ Bienvenue
-Tuteur: Les questions vont maintenant être plus difficiles.
+Tuteur: Tu es monté au niveau supérieur, les questions vont maintenant être plus difficiles.
 	
 ~ q1
 
 Anubis: Combien font 12x25 ?
 - 1225
-	do incorrect(40)
 	Tuteur: Faux. 
+	do incorrect(40)
 	Anubis: Prends ça !
 - 300
 	do correct(50)
@@ -27,6 +27,45 @@ Tuteur: Combien font 140/7 ?
 - 12
 	do correct(40)
 	Tuteur: Correct.
+	Anubis: Je t'ai eu !
+- 18
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Je t'ai eu !
+- 20
+	do correct(50)
+	Tuteur: Exact.
+	Anubis: ARRGGHH
+- 23
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Je t'ai eu !
+	
+	
+~ q3
+Tuteur: Combien font 128 + 82 ?
+- 200
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Je t'ai eu !
+- 190
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Je t'ai eu !
+- 210
+	do correct(50)
+	Tuteur: Exact.
+	Anubis: ARRGGHH
+- 220
+	do incorrect(40)
+	Tuteur: Faux.
+	Anubis: Je t'ai eu !
+	
+~ q4
+Tuteur: Combien font 140/7 ?
+- 12
+	do incorrect(40)
+	Tuteur: Faux.
 	Anubis: Je t'ai eu !
 - 18
 	do incorrect(40)

@@ -18,4 +18,5 @@ func take_damage(damage: int) -> void:
 
 func die() -> void:
 	print("Enemy is dead.")
+	get_parent().loadWin()
 	# Handle player death logic here

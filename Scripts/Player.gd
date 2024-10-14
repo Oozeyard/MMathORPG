@@ -31,9 +31,10 @@ func gain_xp(amount: int) -> void:
 		xp = xp - xpCap
 		xpCap = xpCap * 2.5
 		get_parent().get_node("UI_Player/CanvasLayer/Panel/XPBar").value = xp*100/xpCap
-		if level > 1:
+		if level == 2:
 			get_parent().loadHard()
 
 func die() -> void:
 	print("Player is dead.")
+	get_parent().loadFail()
 	# Handle player death logic here

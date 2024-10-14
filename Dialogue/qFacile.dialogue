@@ -5,29 +5,65 @@ Tuteur: Combien font 1+1 ?
 - 2
 	Tuteur: Correct.
 	Anubis: OOF !
+	do correct(30)
 - 1
 	Tuteur: Incorrect.
 	Anubis: Prends ça !
+	do incorrect(20)
 - 11
 	Tuteur: Incorrect. 
 	Anubis: Prends ça !
+	do incorrect(20)
 - 0
 	Tuteur: Incorrect.
 	Anubis: Prends ça !
+	do incorrect(20)
 
 ~ q2
 Tuteur: Combien font 2x2 ?
 - 4
 	Tuteur: Correct.
 	Anubis: AAAAHHH!
+	do correct(30)
 - 22
 	Tuteur: Incorrect.
 	Anubis: Prends ça !
+	do incorrect(20)
 - 2
 	Tuteur: Incorrect.
 	Anubis: Prends ça !
+	do incorrect(20)
 - 12
 	Tuteur: Incorrect.
 	Anubis: Prends ça !
+	do incorrect(20)
+
+~ suite
+if nbErreur >= 4 :
+	Tuteur : Tu as encore échoué aux deux questions, veux-tu avoir des questions de révision ?
+    - Oui
+		Anubis: Tu n'es pas un adversaire à ma taille ! Retourne t'entraîner !
+		do loadRevision()
+    - Non
+		Tuteur: Très bien. => q3
+
+~ q3
+Tuteur: Combien font 2x2 ?
+- 4
+	Tuteur: Correct.
+	Anubis: AAAAHHH!
+	do correct(30)
+- 22
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(20)
+- 2
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(20)
+- 12
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(20)
 
 => END

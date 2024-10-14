@@ -30,3 +30,12 @@ func loadEasy():
 	
 func loadHard():
 	DialogueManager.show_dialogue_balloon(load("res://Dialogue/qDifficile.dialogue"))
+
+func loadWin():
+	DialogueManager.show_dialogue_balloon(load("res://Dialogue/victoire.dialogue"))
+
+func loadFail():
+	DialogueManager.show_dialogue_balloon(load("res://Dialogue/echec.dialogue"))
+
+func loadRevision():
+	DialogueManager.show_dialogue_balloon(load("res://Dialogue/révision.dialogue"))
