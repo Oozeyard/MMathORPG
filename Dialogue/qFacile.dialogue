@@ -48,20 +48,48 @@ if nbErreur >= 4 :
 		Tuteur: Très bien. => q3
 
 ~ q3
-Tuteur: Combien font 2x2 ?
-- 4
+Tuteur: Combien font 9/3 ?
+- 3
 	Tuteur: Correct.
 	Anubis: AAAAHHH!
 	do correct(30)
-- 22
-	Tuteur: Incorrect.
-	Anubis: Prends ça !
-	do incorrect(20)
-- 2
+- 6
 	Tuteur: Incorrect.
 	Anubis: Prends ça !
 	do incorrect(20)
 - 12
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(20)
+- 93
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(20)
+
+~ suite2
+if nbErreur >= 4 :
+	Tuteur : Tu as encore échoué aux deux questions, veux-tu avoir des questions de révision ?
+    - Oui
+		Anubis: Tu n'es pas un adversaire à ma taille ! Retourne t'entraîner !
+		do loadRevision()
+    - Non
+		Tuteur: Très bien. => q4
+
+~ q4
+Tuteur: Combien font 12-6 ?
+- 6
+	Tuteur: Correct.
+	Anubis: AAAAHHH!
+	do correct(30)
+- 4
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(20)
+- 8
+	Tuteur: Incorrect.
+	Anubis: Prends ça !
+	do incorrect(20)
+- 5
 	Tuteur: Incorrect.
 	Anubis: Prends ça !
 	do incorrect(20)

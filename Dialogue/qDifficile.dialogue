@@ -6,78 +6,78 @@ Tuteur: Tu es monté au niveau supérieur, les questions vont maintenant être p
 Anubis: Combien font 12x25 ?
 - 1225
 	Tuteur: Faux. 
-	do incorrect(40)
 	Anubis: Prends ça !
+	do incorrect(40)
 - 300
-	do correct(50)
 	Tuteur: Exact.
 	Anubis: Bien joué, humain !
+	do correct(50)
 - 250
-	do incorrect(40)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(40)
 - 325
-	do incorrect(40)
 	Tuteur: Faux.
 	Anubis: Prends ça !
+	do incorrect(40)
 
 
 ~ q2
 Tuteur: Combien font 140/7 ?
 - 12
-	do correct(40)
-	Tuteur: Correct.
+	Tuteur: Incorrect.
 	Anubis: Je t'ai eu !
-- 18
 	do incorrect(40)
+- 18
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
+	do incorrect(40)
 - 20
-	do correct(50)
 	Tuteur: Exact.
 	Anubis: ARRGGHH
+	do correct(50)
 - 23
-	do incorrect(40)
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
+	do incorrect(40)
 	
 	
 ~ q3
 Tuteur: Combien font 128 + 82 ?
 - 200
-	do incorrect(40)
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
+	do incorrect(40)
 - 190
-	do incorrect(40)
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
+	do incorrect(40)
 - 210
-	do correct(50)
 	Tuteur: Exact.
 	Anubis: ARRGGHH
+	do correct(50)
 - 220
-	do incorrect(40)
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
+	do incorrect(40)
 	
 ~ q4
-Tuteur: Combien font 140/7 ?
-- 12
-	do incorrect(40)
+Tuteur: Combien font 222 - 88 ?
+- 144
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
-- 18
 	do incorrect(40)
+- 156
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
-- 20
-	do correct(50)
+	do incorrect(40)
+- 134
 	Tuteur: Exact.
 	Anubis: ARRGGHH
-- 23
-	do incorrect(40)
+	do correct(50)
+- 136
 	Tuteur: Faux.
 	Anubis: Je t'ai eu !
+	do incorrect(40)
 
 => END

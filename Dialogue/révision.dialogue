@@ -35,6 +35,17 @@ Tuteur: Combien font 4/2 ?
 - 4
 	Tuteur: Faux. La bonne réponse était 2.
 	
+~ q4
+Tuteur: Combien font 3*0 ?
+- 3
+	Tuteur: Faux. La bonne réponse était 0.
+- 0
+	Tuteur: Correct. 
+- 1
+	Tuteur: Faux. La bonne réponse était 0.
+- 4
+	Tuteur: Faux. La bonne réponse était 0.
+	
 ~ fin
 Tuteur: Les révisions sont terminées, reprenons où nous nous étions arrêtés.
 
